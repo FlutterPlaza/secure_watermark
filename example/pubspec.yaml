@@ -1,0 +1,16 @@
+name: secure_watermark_example
+description: Interactive demo of the secure_watermark package.
+publish_to: none
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  secure_watermark:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ">=4.0.0 <6.0.0"
