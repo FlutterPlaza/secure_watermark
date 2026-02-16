@@ -51,7 +51,7 @@ Pure Dart/Flutter — works on all platforms (no plugin, no method channels).
 
 ```yaml
 dependencies:
-  secure_watermark: ^0.3.0
+  secure_watermark: ^0.3.1
 ```
 
 ## Usage

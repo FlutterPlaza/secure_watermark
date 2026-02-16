@@ -11,7 +11,12 @@ Uint8List _createTestPng() {
   final image = img.Image(width: 20, height: 20);
   for (var y = 0; y < 20; y++) {
     for (var x = 0; x < 20; x++) {
-      image.setPixelRgba(x, y, 128, 128, 128, 255);
+      final pixel = image.getPixel(x, y);
+      pixel
+        ..r = 128
+        ..g = 128
+        ..b = 128
+        ..a = 255;
     }
   }
   return Uint8List.fromList(img.encodePng(image));

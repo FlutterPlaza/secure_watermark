@@ -11,7 +11,12 @@ Uint8List _createTestPng({int width = 100, int height = 100}) {
   // Fill with a mid-tone blue so LSB changes are invisible.
   for (var y = 0; y < height; y++) {
     for (var x = 0; x < width; x++) {
-      image.setPixelRgba(x, y, 128, 128, 128, 255);
+      final pixel = image.getPixel(x, y);
+      pixel
+        ..r = 128
+        ..g = 128
+        ..b = 128
+        ..a = 255;
     }
   }
   return Uint8List.fromList(img.encodePng(image));

@@ -1,6 +1,6 @@
 name: secure_watermark
-description: Visible & invisible watermarking for Flutter. Visible overlays deter screenshots; forensic (spread-spectrum LSB) watermarks embed traceable data in image pixels for post-leak identification.
-version: 0.3.0
+description: "Visible & invisible watermarking for Flutter. Overlay watermarks deter screenshots; forensic LSB watermarks embed traceable data in pixels."
+version: 0.3.1
 homepage: https://flutterplaza.com
 repository: https://github.com/FlutterPlaza/secure_watermark
 issue_tracker: https://github.com/FlutterPlaza/secure_watermark/issues
@@ -15,7 +15,7 @@ environment:
   flutter: ">=3.19.0"
 
 dependencies:
-  args: ^2.4.0
+  args: ^2.5.0
   flutter:
     sdk: flutter
   image: ^4.0.0

@@ -1,3 +1,10 @@
+## 0.3.1
+
+- fix: shorten package description to meet pub.dev 60–180 character limit
+- fix: tighten `args` lower bound to `^2.5.0` for `ArgResults.flag()`/`option()` compatibility
+- fix: replace `setPixelRgba` with `getPixel` channel assignment in tests for `image` 4.0.0 compatibility
+- fix: pass pub.dev downgrade analysis with zero errors
+
 ## 0.3.0
 
 - feat: example app with two-tab demo (visible + forensic watermarks)
