@@ -1,3 +1,8 @@
+## 0.3.2
+
+- fix: shorten description to pass pub.dev 60–180 character check
+- fix: use bracket syntax for `ArgResults` to pass downgrade analysis with `args` ^2.5.0
+
 ## 0.3.1
 
 - fix: shorten package description to meet pub.dev 60–180 character limit

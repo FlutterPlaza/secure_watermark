@@ -28,7 +28,7 @@ void main(List<String> arguments) {
     exit(64); // EX_USAGE
   }
 
-  if (args.flag('help')) {
+  if (args['help'] as bool) {
     stdout.writeln('Embed a forensic watermark into a PNG image.');
     stdout.writeln();
     stdout.writeln('Usage: dart run secure_watermark:embed [options]');
@@ -36,11 +36,11 @@ void main(List<String> arguments) {
     exit(0);
   }
 
-  final inputPath = args.option('input')!;
-  final outputPath = args.option('output')!;
-  final payload = args.option('payload')!;
-  final key = args.option('key')!;
-  final redundancy = int.tryParse(args.option('redundancy')!);
+  final inputPath = args['input'] as String;
+  final outputPath = args['output'] as String;
+  final payload = args['payload'] as String;
+  final key = args['key'] as String;
+  final redundancy = int.tryParse(args['redundancy'] as String);
 
   if (redundancy == null || redundancy <= 0 || redundancy.isEven) {
     stderr.writeln('Error: redundancy must be a positive odd integer');
